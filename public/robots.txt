@@ -1,3 +1,32 @@
+# Allow all crawlers by default
 User-agent: *
 Allow: /
+
+# Google AdsBot
+User-agent: AdsBot-Google
+Disallow:
+
+# OpenAI's GPTBot
+User-agent: GPTBot
+Allow: /
+
+# OpenAI's user-triggered fetches
+User-agent: ChatGPT-User
+Allow: /
+
+# Google's AI models
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic's AI models
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemap location
 Sitemap: https://fathin.dev/sitemap.xml
