@@ -1,0 +1,459 @@
+---
+title: "Python: Zero to Hero"
+author: "Fathin Afif"
+publishedAt: "2025-06-16"
+summary: "This was all my knowledge about basic Python, i wrote this web i'm still learning, so maybe some bad writing here. but this is my note man."
+---
+
+# First Line Of Code
+
+```python
+print('Hello My Lovely!')
+```
+
+# Data Type
+
+- int
+- float
+- str
+- boolean
+
+```python
+print(1+2) -- 3
+print(1+2.5) -- 3.5
+print(1+'2') -- Type Eror can't add str with int
+```
+
+# Variabel
+
+Name that we give to certain values on our code
+
+```python
+a = 2+3
+-- a here is variabel
+```
+
+# Function
+
+Function is usefull for reusable code
+
+```python
+def luasSegitga(alas, tinggi):
+	return luas = alas*tinggi/2
+```
+
+# Comparison Operators
+
+Python comparison operators return Boolean results: **True** or **False**.
+
+| **Symbol** | **Name**                          | **Expression** | **Description**                 |
+| ---------- | --------------------------------- | -------------- | ------------------------------- |
+| **==**     | Equality operator                 | a == b         | a is equal to b                 |
+| **!=**     | Not equal to operator             | a != b         | a is **not** equal to b         |
+| **>**      | Greater than operator             | a > b          | a is larger than b              |
+| **>=**     | Greater than or equal to operator | a >= b         | a is larger than or equal to b  |
+| **<**      | Less than operator                | a < b          | a is smaller than b             |
+| **<=**     | Less than or equal to operator    | a <= b         | a is smaller than or equal to b |
+
+## Comparison Operators With Strings
+
+Python use to compare very left unicode number from this table when doing with string:
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/59d18994-b45b-4f4b-ad77-149129ca67ac/Untitled.png)
+
+| **Expression** | **Description**                                                                                 |
+| -------------- | ----------------------------------------------------------------------------------------------- |
+| "a" **==** "a" | If string "a" is identical to string "a", returns True. Else, returns False                     |
+| "a" **!=** "b" | If string "a" is **not** identical to string "b"                                                |
+| "a" **>** "b"  | If string "a" has a larger Unicode value than string "b"                                        |
+| "a" **>=** "b" | If the Unicode value for string "a" is greater than or equal to the Unicode value of string "b" |
+| "a" **<** "b"  | If string "a"  has a smaller Unicode value than string "b"                                      |
+| "a" **<=** "b" | If the Unicode value for string "a" is smaller than or equal to the Unicode value of string "b" |
+
+# Logical Operators
+
+When Python logical operators are used with comparison operators, the interpreter will return Boolean results (**True** or **False**):
+
+| a **==** a **and** a **!=** b | True if both sides are True, otherwise False.                   |
+| ----------------------------- | --------------------------------------------------------------- |
+| a **>** b **or** a **<=** c   | True if either side is True. False if both sides are False.     |
+| **not** a **==** b            | True if the statement is False, False if the statement is True. |
+
+# Membership Operators
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8ad13a56-2ed7-436b-8bb0-4b0777e0a7b9/Untitled.png)
+
+# If - Elif - Else Statement
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e895857-a875-42f5-be0f-9e027c8a5d2c/Untitled.png)
+
+# For Loops and Nested Loops
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d9c5dba-cc27-4a20-9890-4eb107ad2a55/Untitled.png)
+
+# While Loops
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d9c1582c-ab4f-4b77-80a0-f366eb10032b/Untitled.png)
+
+# Recursion
+
+this usefull when we work on like Tree sturcture. can count all the goup on sub branch or subsub branch in one file. (A recursive function will usually have this structure)
+
+A recursive function must include a recursive case and base case. The recursive case calls the function again, with a different value. The base case returns a value without calling the same function.
+
+A recursive function will usually have this structure:
+
+```python
+def recursive_function(parameters):
+    if base_case_condition(parameters):
+        return base_case_value
+    recursive_function(modified_parameters)
+```
+
+## Make List then Print into one single string
+
+```python
+    n = int(input()) # make input feature
+    num = list(range(1,n+1)) # make list dengan isi 1,2,3
+
+    # for loop to convert int to str
+    for i in range (n):
+        num[i]=str(num[i])
+
+    print(''.join(num))
+```
+
+## String operations
+
+- **len(string) -** Returns the length of the string
+- **for character in string** \*\*\*\*Iterates over each character in the string
+- **if substring in string** Checks whether the substring is part of the string
+- **string[i]** - Accesses the character at index **i** of the string, starting at zero
+- **string[i:j]** Accesses the substring starting at index **i**, ending at index **j** minus 1. If **i** is omitted, its value defaults to **0**. If **j** is omitted, the value will default to **len(string)**.
+
+## String methods
+
+- **string.lower()** Returns a copy of the string with all lowercase characters
+- **string.upper()** Returns a copy of the string with all uppercase characters
+- **string.lstrip()** \*\*\*\*Returns a copy of the string with the left-side whitespace removed
+- **string.rstrip()** \*\*\*\*Returns a copy of the string with the right-side whitespace removed
+- **string.strip()** Returns a copy of the string with both the left and right-side whitespace removed
+- **string.count(substring)** - Returns the number of times substring is present in the string
+- **string.isnumeric()** - Returns True if there are only numeric characters in the string. If not, returns False.
+- **string.isalpha()** Returns True if there are only alphabetic characters in the string. If not, returns False.
+- **string.replace(old, new)** Returns a new string where all occurrences of old have been replaced by new.
+- **delimiter.join(list of strings)** Returns a new string with all the strings joined by the delimiter
+  ```python
+  ' '.join(['this', 'is', 'try'])
+  ```
+
+will print ‘this is try’
+
+- **string.split()**
+
+  ```python
+  'this is try'.split()
+
+  ```
+
+  will print ['this', 'is', 'try']
+
+- **string.split(delimiter)** - Returns a list of substrings that were separated by whitespace or a delimiter
+- format method
+
+```python
+print("hello {}, your lucky number is {}".format(name, number))
+```
+
+- format expression
+
+```python
+price = 7.5
+price_with_tax = price*1.09
+
+print("base price: ${:2f}. With tax: ${:2f}".format(price, price_with_tax))
+```
+
+will print “base price: $7.50. With tax: $8.18”
+
+Another Example:
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7dbe8a97-4db9-4f1a-9bf3-102744bd0de7/acbae2b0-e3cf-4877-98a7-739bc1371082/Untitled.png)
+
+“>” for Alight to right, “>6” for Alight to right on 6 spaces
+
+| **Expr** | **Meaning**                                  | **Example**                      |
+| -------- | -------------------------------------------- | -------------------------------- |
+| {:d}     | integer value                                | '{:d}'.format(10.5) → '10'       |
+| {:.2f}   | floating point with that many decimals       | '{:.2f}'.format(0.5) → '0.50'    |
+| {:.2s}   | string with that many characters             | '{:.2s}'.format('Python') → 'Py' |
+| {:<6s}   | string aligned to the left that many spaces  | '{:<6s}'.format('Py') → 'Py    ' |
+| {:>6s}   | string aligned to the right that many spaces | '{:>6s}'.format('Py') → '    Py' |
+| {:^6s}   | string centered in that many spaces          | '{:^6s}'.format('Py') → '  Py '  |
+
+# List
+
+x = []
+
+```python
+def get_word(sentence, n):
+	# Only proceed if n is positive
+	if n > 0:
+		words = sentence.split()
+		# Only proceed if n is not more than the number of words
+		if n <= len(words):
+			return(words[n-1])
+	return("")
+
+print(get_word("This is a lesson about lists", 4)) # Should print: lesson
+print(get_word("This is a lesson about lists", -4)) # Nothing
+print(get_word("Now we are cooking!", 1)) # Should print: Now
+print(get_word("Now we are cooking!", 5)) # Nothing
+```
+
+## Adding Data into List
+
+df = [1,2,3,4]
+
+- Using append()
+
+```python
+df.append(5)
+##will make df = [1,2,3,4,5]
+```
+
+- Using Insert()
+
+```python
+df.insert(0,'nomo')
+#will make df = ['nomo',0,1,2,3,4,5]
+```
+
+## Remove data from List
+
+df = ['nomo',0,1,2,3,4,5]
+
+- using remove()
+
+```python
+df.remove('nomo')
+#will make df = [0,1,2,3,4,5]
+```
+
+- using pop()
+
+```python
+df = ['nomo',0,1,2,3,4,5]
+df.pop(2)
+#will make df = ['nomo',0,2,3,4,5]
+```
+
+## Changing data from list
+
+```python
+df = ['nomo',0,1,2,3,4,5]
+df[0] = 9
+#will make df = [9,0,1,2,3,4,5]
+```
+
+# List Comprehension
+
+```python
+number = []
+for x in range (1,10):
+	number.append(x)
+number
+## Output : 1,2,3,4,5,6,7,8,9
+```
+
+Actually that task can write on shorter code like
+
+```python
+number = [x for x in range (1,10)]
+```
+
+other example
+
+```python
+def odd_numbers(n):
+	return [x for x in range (1,n+1) if x % 2 != 0]
+
+print(odd_numbers(5))  # Should print [1, 3, 5]
+```
+
+# Tuple
+
+like list but immutable
+
+```python
+def file_size(file_info):
+	fileName, fileType, bytes= file_info
+	return("{:.2f}".format(bytes / 1024))
+
+print(file_size(('Class Assignment', 'docx', 17875))) # Should print 17.46
+print(file_size(('Notes', 'txt', 496))) # Should print 0.48
+print(file_size(('Program', 'py', 1239))) # Should print 1.21
+```
+
+## Iterating over Lists and Tuples
+
+```python
+animals = ["Lion", "Zebra", "Dolphin", "Monkey"]
+chars = 0
+for animal in animal:
+	chars += len(animal)
+print("Total characters: {}, Average length {}".format(chars, chars/len(animals)))
+
+#Output : Total characters: 22, Average length 5.5
+```
+
+### Enumerate Function
+
+```python
+winners = ["Ashley", "Dylan", "Reese"]
+for index, person in enumerate(winners):
+	print("{} - {}".format(index + 1, person))
+
+#Output : 1 - Ashley
+			#   2 - Dylan
+			#   3 - Reese
+```
+
+### Use Case
+
+- Problem
+  Say you have a list of tuples containing two strings each. The first string is an email address and the second is the full name of the person with that email address. You want to write a function that creates a new list containing one string per person including their name and the email address between angled brackets. the format usually used in emails like this.
+- Solution
+
+  ```python
+  # build fucntin to print Name, then email
+  def full_name(people):
+  	result = []
+  	for email, name in people:
+  		result.append("{} <{}>".format(name, email))
+  	return result
+
+  #test the function
+  	print(full_name([("fathin@gmail.com", "Fathin Afif"), ("abc@example.com", "abc")]))
+  	#Output : ['Fathin Afif <fathin@gmail.com>', 'abc <abc@gmail.com>']
+  ```
+
+- other code
+
+  ```python
+  def skip_elements(elements):
+  	df = []
+  	for index, elemen in enumerate(elements):
+  		if index%2 == 0:
+  			df.append(elemen)
+  	return df
+
+  print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+  print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
+  ```
+
+  # Dictionary
+
+  ```python
+  mhs1: {
+      "nama" : "fathin afif",
+      "email" : "fathinafiff@gmail.com"
+  }
+  prodi = {
+      "teknik" : ["mesin", "industri"],
+      "mipa" : ["matematik", "fisika"]
+  }
+  ```
+
+  ## Access the data
+
+  ```python
+  # Access data from mhs1
+  mhs1["nama"]
+
+  #Access data from prodi
+  prodi["teknik"]
+  --
+  prodi["teknik"][0]
+  ## output : "mesin"
+  ```
+
+  ## Add and delete new key
+
+  ```python
+  # add new key into mhs1
+  mhs1["hp"] : "082365294643"
+
+  #delete key
+  del mhs1["email"]
+  ```
+
+  ## Usefull function on Dictionary
+
+  ```python
+  file_counts = {
+      "jpg":10,
+      "txt":14,
+      "csv":2,
+      "py":23
+  }
+  ```
+
+  ### dic.items()
+
+  this will print the keys with the values
+  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7dbe8a97-4db9-4f1a-9bf3-102744bd0de7/0e1499c5-3391-4be1-8a6a-4a8edfd91226/Untitled.png)
+
+  ### dic.keys()
+
+  this will print the key of dictionary
+  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7dbe8a97-4db9-4f1a-9bf3-102744bd0de7/0486c89e-e789-403c-be8e-74160e95acf1/Untitled.png)
+  dic.values()
+  this will print the values of dictionary
+  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7dbe8a97-4db9-4f1a-9bf3-102744bd0de7/6e02db01-c8e3-449c-929e-cf1fa0982201/Untitled.png)
+
+  ## Operations
+
+  - **len(dictionary)** - Returns the number of items in a dictionary.
+  - **for key, in dictionary** Iterates over each key in a dictionary.
+  - **for key, value in dictionary.items()** Iterates over each key,value pair in a dictionary.
+  - **if key in dictionary** - Checks whether a key is in a dictionary.
+  - **dictionary[key]** - Accesses a value using the associated key from a dictionary.
+  - **dictionary[key] = value** Sets a value associated with a key.
+  - **del dictionary[key]** Removes a value using the associated key from a dictionary.
+
+  ## Methods
+
+  - **dictionary.get(key, default)** Returns the value corresponding to a key, or the default value if the specified key is not present.
+  - **dictionary.keys()** Returns a sequence containing the keys in a dictionary.
+  - **dictionary.values()** Returns a sequence containing the values in a dictionary.
+  - **dictionary[key].append(value)** - Appends a new value for an existing key.
+  - **dictionary.update(other_dictionary)** - Updates a dictionary with the items from another dictionary. Existing entries are updated; new entries are added.
+  - **dictionary.clear()** Deletes all items from a dictionary.
+  - **dictionary.copy()** Makes a copy of a dictionary.
+
+  ## Case Study #1
+
+  ```python
+  cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
+  for animal, tool in cool_beasts.items():
+      print("{} have {}".format(animal, tool))
+  ```
+
+  output :
+  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7dbe8a97-4db9-4f1a-9bf3-102744bd0de7/7cc6a1a0-8895-47c9-9e7f-6418d8bac345/Untitled.png)
+
+  ## Case Study #2
+
+  ```python
+  def count_letter(text):
+      result = {}
+      for letter in text:
+          if letter not in result:
+              result[letter] = 0
+          result[letter] += 1
+      return result
+  ```
+
+  output:
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/7dbe8a97-4db9-4f1a-9bf3-102744bd0de7/bb50ac86-db04-4e61-8b71-0ca4fc93a85f/Untitled.png
