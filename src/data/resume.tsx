@@ -100,18 +100,18 @@ export const DATA = {
       logoUrl: "/nightcoders.png",
       start: "2024",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Founder of a tech studio building modern web and mobile applications with deep integration of AI systems. Delivered full-stack projects using Next.js, React Native, TypeScript, and Python. Worked on end-to-end machine learning pipelines and LLM-based features for real-time apps. Also leading the development of our own SaaS products that blend clean user experience with intelligent automation and scalable infrastructure.",
     },
     {
-      company: "Fastwork",
+      company: "Upwork",
       href: "https://upwork.com",
       badges: ["Current"],
       location: "Remote",
       title: "Software Engineer",
-      logoUrl: "/fastwork.png",
+      logoUrl: "/upwork.png",
       start: "2024",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Focused on delivering high-impact solutions to global clients, including web apps using Next.js, mobile apps with React Native, and AI-powered systems. Worked on scoping and prototyping solutions that leverage machine learning and LLMs. While no contracts were finalized, the experience sharpened project planning, proposal writing, and integration of AI into client-facing products.",
     },
     {
       company: "Fastwork",
@@ -122,7 +122,7 @@ export const DATA = {
       logoUrl: "/fastwork.png",
       start: "2024",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Built and deployed multiple machine learning models and AI-based features across internal and external applications. Integrated LLMs into production systems, powering tasks such as content generation, summarization, and recommendations. Collaborated on backend services using Python and worked on deploying scalable inference workflows that integrate seamlessly with web and mobile frontends.",
     },
     {
       company: "Sejasa.com - Recommend Group",
@@ -134,7 +134,7 @@ export const DATA = {
       start: "2023",
       end: "2025",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Led the development of a smart chatbot powered by Retrieval-Augmented Generation (RAG), integrated directly with Sejasa's APIs and WATI. Enabled users to request services and get personalized responses via chat. Handled full-stack implementation including prompt engineering, vector search integration, API connection, and conversation UX — significantly improving support automation and customer experience.",
     },
   ],
   education: [
