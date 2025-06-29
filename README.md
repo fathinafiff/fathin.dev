@@ -1,47 +1,44 @@
 <div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
+  <img alt="Portfolio" src="/public/me.png" width="150px" />
+  <h1>Fathin Afif</h1>
+  <p>a guy in 20’s, building apps. chasing freedom. now also very active on X.</p>
+  <p>
+    <a href="https://fathin.dev">Portfolio</a> ·
+    <a href="https://x.com/fathinafiff_">X/Twitter</a> ·
+    <a href="https://github.com/fathinafiff">GitHub</a> ·
+    <a href="https://linkedin.com/in/fathinafiff">LinkedIn</a>
+  </p>
 </div>
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+## About Me
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+I'm a software engineer from Aceh, Indonesia. In mid-2025, I transitioned to freelance work to focus on building and scaling my own products. My background is in Engineering, and I'm passionate about creating innovative applications.
 
-# Features
+## My Work
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+Here are some of the projects I'm proud of:
 
-# Getting Started Locally
+- **[Creacon](https://creacon.id):** A modern web app for a digital creative agency.
+- **[MyDr-Detection](https://mydrdetection.com/):** A web app for medical detection.
+- **[GEN-Z EYEWEAR](https://www.genzlens.com/):** An e-commerce platform for a modern eyewear brand.
+- **[Latihan Soal](https://latihansoal.fun/):** An educational platform with practice questions for civil servant exams.
+- **[Copi - Notes & Tasks](https://getcopi.app):** A minimalist note-taking and task management app.
 
-1. Clone this repository to your local machine:
+## Tech Stack
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+I have experience with a variety of technologies, including:
 
-2. Move to the cloned directory
+- **Languages:** Python, TypeScript, JavaScript
+- **Backend:** FastAPI, Flask, OpenAI API
+- **Frontend:** React, Next.js, Tailwind CSS, ShadCN/UI, MagicUI
+- **AI & ML:** TensorFlow, LangChain
+- **Database & DevOps:** Supabase, MongoDB, PostgreSQL, Docker
+- **Tools:** Cloudflare, AWS, Vercel, Git
 
-   ```bash
-   cd portfolio
-   ```
+## Get in Touch
 
-3. Install dependencies:
+- **Email:** fathin@nightcoders.com
 
-   ```bash
-   pnpm install
-   ```
+---
 
-4. Start the local Server:
-
-   ```bash
-   pnpm dev
-   ```
-
-5. Open the [Config file](./src/data/resume.tsx) and make changes
-
-# License
-
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+This portfolio was built with [Next.js](https://nextjs.org/), [shadcn/ui](https://ui.shadcn.com/), and [Magic UI](https://magicui.design/), and is deployed on [Vercel](https://vercel.com/). The original template was created by [Dillion Verma](https://github.com/dillionverma/portfolio).

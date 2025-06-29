@@ -67,7 +67,9 @@ export default function Page() {
                 subtitle={work.title}
                 href={work.href}
                 badges={work.badges}
-                period={`${work.start} - ${work.end ?? "Present"}`}
+                period={`${work.start} - ${
+                  "end" in work ? work.end : "Present"
+                }`}
                 description={work.description}
               />
             </BlurFade>
@@ -142,8 +144,8 @@ export default function Page() {
                   title={project.title}
                   description={project.description}
                   tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
+                  image={"image" in project ? project.image : ""}
+                  video={"video" in project ? project.video : ""}
                   links={project.links}
                 />
               </BlurFade>
