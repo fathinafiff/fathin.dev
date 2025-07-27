@@ -143,8 +143,8 @@ export const DATA = {
       href: "https://usk.ac.id",
       degree: "Bachelor's Degree of Engineering",
       logoUrl: "/usk.svg",
-      start: "2018",
-      end: "2023",
+      // start: "2018",
+      // end: "2023",
     },
   ],
   projects: [
@@ -233,6 +233,11 @@ export const DATA = {
           title: "Website",
           href: "https://getcopi.app",
           icon: <Icons.globe className="h-4 w-4" />,
+        },
+        {
+          title: "Appstore",
+          href: "https://apps.apple.com/us/app/copi-notes-tasks/id6746962033",
+          icon: <Icons.apple className="h-4 w-4" />,
         },
       ],
     },
