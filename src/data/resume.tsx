@@ -8,9 +8,9 @@ export const DATA = {
   location: "Aceh, Indonesia",
   locationLink: "https://www.google.com/maps/place/Aceh",
   description:
-    "a guy in 20’s, building apps. chasing freedom. now also very active on X.",
+    "indie founder and software engineer in my 20s. I build web and mobile products with AI at the core. shipping fast, learning in public, chasing freedom through products. very active on X.",
   summary:
-    "At the mid of 2025, I quit my job then go to work as a freelancer and start building and scaling my own Product. In the past, [I pursued a degree in Engineering](/#education)",
+    "I come from an engineering background, but I learned more by building real products than from any classroom.\n\nIn mid 2025, I quit my full time job to focus fully on freelancing and building my own products. Since then, I’ve been working on client projects while scaling SaaS products under Nightcoders.\n\nI care about:\n\n- building fast\n- keeping things simple\n- shipping software people actually use\n- no hype. no fake growth. just real work.",
   avatarUrl: "/me.png",
   skills: [
     // Languages
@@ -21,30 +21,32 @@ export const DATA = {
     // Backend & APIs
     "FastAPI",
     "Flask",
-    "OpenAI API",
-
-    // Frontend & UI
-    "React",
-    "Next.js",
-    "Tailwind CSS",
-    "ShadCN/UI",
-    "MagicUI",
-
-    // AI & ML
-    "TensorFlow",
-    "LangChain",
-
-    // Database & DevOps
     "Supabase",
     "MongoDB",
     "PostgreSQL",
     "Docker",
-
-    // Tools & Productivity
     "Cloudflare",
     "AWS",
     "Vercel",
+
+    // Frontend & UI
+    "React",
+    "Next.js",
+    "React Native",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Magic UI",
+
+    // AI & ML
+    "OpenAI API",
+    "LangChain",
+    "TensorFlow",
+    "RAG systems",
+    "Prompt engineering",
+
+    // Tools & Productivity
     "Git",
+    "Modern deployment workflows",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -100,7 +102,7 @@ export const DATA = {
       logoUrl: "/nightcoders.png",
       start: "2024",
       description:
-        "Founder of a tech studio building modern web and mobile applications with deep integration of AI systems. Delivered full-stack projects using Next.js, React Native, TypeScript, and Python. Worked on end-to-end machine learning pipelines and LLM-based features for real-time apps. Also leading the development of our own SaaS products that blend clean user experience with intelligent automation and scalable infrastructure.",
+        "I run a small tech studio focused on building modern web and mobile applications with strong AI integration. I build full stack products using Next.js, React Native, TypeScript, and Python, and design and ship AI features such as RAG systems, LLM workflows, and automation. I also run and scale internal SaaS products from zero to paying users, handling product, UI, backend, infrastructure, and deployment end to end.",
     },
     {
       company: "Upwork",
@@ -111,7 +113,7 @@ export const DATA = {
       logoUrl: "/upwork.png",
       start: "2024",
       description:
-        "Focused on delivering high-impact solutions to global clients, including web apps using Next.js, mobile apps with React Native, and AI-powered systems. Worked on scoping and prototyping solutions that leverage machine learning and LLMs. While no contracts were finalized, the experience sharpened project planning, proposal writing, and integration of AI into client-facing products.",
+        "Currently focused on positioning my profile and offerings for global client work. This phase is used to sharpen proposal writing and project scoping, practice breaking down vague ideas into clear technical plans, and learn how to package AI and LLM features for real business use cases. Now actively focusing on landing the first long term projects and collaborations.",
     },
     {
       company: "Fastwork",
@@ -122,19 +124,19 @@ export const DATA = {
       logoUrl: "/fastwork.png",
       start: "2024",
       description:
-        "Built and deployed multiple machine learning models and AI-based features across internal and external applications. Integrated LLMs into production systems, powering tasks such as content generation, summarization, and recommendations. Collaborated on backend services using Python and worked on deploying scalable inference workflows that integrate seamlessly with web and mobile frontends.",
+        "Worked on building and deploying AI powered features for internal and external applications. Integrated LLMs for content generation, summarization, and recommendations, built backend services in Python for scalable inference, and collaborated closely with frontend teams to ship AI features that feel simple and usable.",
     },
     {
       company: "Sejasa.com - Recommend Group",
       href: "https://sejasa.com",
       badges: [],
       location: "Remote",
-      title: "Data Analyst",
+      title: "AI Engineer",
       logoUrl: "/sejasa.png",
       start: "2023",
       end: "2025",
       description:
-        "Led the development of a smart chatbot powered by Retrieval-Augmented Generation (RAG), integrated directly with Sejasa's APIs and WATI. Enabled users to request services and get personalized responses via chat. Handled full-stack implementation including prompt engineering, vector search integration, API connection, and conversation UX — significantly improving support automation and customer experience.",
+        "Led the development of an internal AI chatbot used directly by real users. Built a Retrieval Augmented Generation chatbot connected to internal APIs and WATI, handled prompt design, vector search, and conversation logic, and implemented the system end to end, including backend logic and chat UX. This significantly improved support automation and response quality.",
     },
   ],
   education: [
@@ -154,8 +156,8 @@ export const DATA = {
       // dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
-        "A modern web app for Creacon, showcasing digital creative services, project portfolio, and a contact system with Strapi CMS backend.",
-      technologies: ["Next.Js", "Typescript", "Strapi", "TailwindCSS"],
+        "Modern company website showcasing creative services, portfolio, and contact system with CMS support.",
+      technologies: ["Next.js", "TypeScript", "Strapi", "Tailwind CSS"],
       links: [
         {
           type: "Website",
@@ -166,18 +168,17 @@ export const DATA = {
       image: "/creacon.svg",
     },
     {
-      title: "MyDr-Detection",
+      title: "MyDr Detection",
       href: "https://mydrdetection.com/",
       active: true,
       description:
-        "A modern web app for Creacon, showcasing digital creative services, project portfolio, and a contact system with Strapi CMS backend.",
+        "AI powered web application focused on medical detection workflows.",
       technologies: [
-        "Next.Js",
-        "Typescript",
-        "TailwindCSS",
+        "Next.js",
+        "TypeScript",
         "Python",
+        "FastAPI",
         "OpenAI API",
-        "FastApi",
       ],
       links: [
         {
@@ -194,8 +195,8 @@ export const DATA = {
       // dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
-        "GEN-Z EYEWEAR is a next-gen eyewear brand and web platform that caters to the bold, expressive style of Gen Z. the site provides PD (Pupillary Distance) measurement tools, helping users find the perfect fit for prescription or fashion glasses — all from the comfort of their devices.",
-      technologies: ["Wix.com", "FastAPI", "Tensorflow"],
+        "Next generation eyewear brand website with AI based PD measurement, allowing users to find the right glasses fit remotely.",
+      technologies: ["Wix", "FastAPI", "TensorFlow"],
       links: [
         {
           type: "Website",
@@ -206,12 +207,12 @@ export const DATA = {
       video: "/genzlens.mp4",
     },
     {
-      title: "Latihan Soal",
+      title: "LatihanSoal.fun",
       href: "https://latihansoal.fun/",
       active: true,
       description:
-        "LatihanSoal.fun offers a wide range of practice questions and mock exams for individuals preparing to enter public institutions or become civil servants. Designed to help users improve accuracy, speed, and confidence, our platform supports success in competitive government job tests.",
-      technologies: ["Next.Js", "Typescript", "Supabase", "TailwindCSS"],
+        "Practice and mock exam platform for public institution and civil service preparation. Designed for speed, accuracy, and high volume usage.",
+      technologies: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
       links: [
         {
           type: "Website",
@@ -224,9 +225,15 @@ export const DATA = {
   ],
   building: [
     {
+      title: "GetMyWebRank",
+      description:
+        "AI powered SEO automation platform. GetMyWebRank helps founders and teams research keywords using AI, turn keywords into content ideas and clusters, generate SEO optimized articles, and manage publishing using a calendar based workflow. Built for consistency, speed, and scale. This is currently our main growth focus.",
+      image: "/getmywebrank.png",
+    },
+    {
       title: "Copi - Notes & Tasks",
       description:
-        "Copi is a minimal note-taking and task management app that helps you stay organized without distractions. Add tasks with reminders, capture quick notes, and categorize everything using shared labels - all in one clean, unified interface.",
+        "Copi is a minimal note and task management app designed to help you stay organized without distractions. Quick notes and task capture, reminders that stay calm and useful, and shared labels to organize everything in one place. Built for daily use.",
       image: "/copi.jpg",
       links: [
         {

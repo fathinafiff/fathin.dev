@@ -209,10 +209,10 @@ export default function Page() {
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
-                  DM me on Twitter
+                  DM me on X
                 </Link>
-                - I&apos;ll get back to you when I can. Please note: I ignore
-                all messages that are disrespectful.
+                . If it&apos;s interesting, I&apos;ll reply when I can. Please
+                note: I ignore all messages that are disrespectful.
               </p>
             </div>
           </BlurFade>
