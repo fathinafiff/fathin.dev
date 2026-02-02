@@ -229,6 +229,13 @@ export const DATA = {
       description:
         "AI powered SEO automation platform. GetMyWebRank helps founders and teams research keywords using AI, turn keywords into content ideas and clusters, generate SEO optimized articles, and manage publishing using a calendar based workflow. Built for consistency, speed, and scale. This is currently our main growth focus.",
       image: "/getmywebrank.png",
+      links: [
+        {
+          title: "Website",
+          href: "https://getmywebrank.com",
+          icon: <Icons.globe className="h-4 w-4" />,
+        },
+      ],
     },
     {
       title: "Copi - Notes & Tasks",

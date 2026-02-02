@@ -23,7 +23,7 @@ export function BuildingCard({ title, description, image, links }: Props) {
         </Avatar>
       </div>
       <div className="flex flex-1 flex-col justify-start gap-1">
-        <h2 className="font-semibold leading-none">{title}</h2>
+        <h3 className="font-semibold leading-none">{title}</h3>
         {description && (
           <span className="prose dark:prose-invert text-sm text-muted-foreground">
             {description}

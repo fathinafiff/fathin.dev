@@ -1,6 +1,7 @@
 import { BuildingCard } from "@/components/building-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import Marquee from "@/components/magicui/marquee";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -24,12 +25,14 @@ export default function Page() {
               </Avatar>
             </BlurFade>
             <div className="flex-col flex flex-1 space-y-2">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-3xl xl:text-4xl/none"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-              />
+              <h1>
+                <BlurFadeText
+                  delay={BLUR_FADE_DELAY}
+                  className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                  yOffset={8}
+                  text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                />
+              </h1>
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
@@ -81,12 +84,21 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
-              </BlurFade>
-            ))}
+          <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background pv-20 md:shadow-xl">
+            <Marquee pauseOnHover className="[--duration:20s]">
+              {DATA.skills.slice(0, Math.ceil(DATA.skills.length / 2)).map((skill) => (
+                <Badge key={skill} className="mx-2 text-md py-2 px-4 shadow-neo border-2">
+                  {skill}
+                </Badge>
+              ))}
+            </Marquee>
+            <Marquee reverse pauseOnHover className="[--duration:20s] mt-4">
+              {DATA.skills.slice(Math.ceil(DATA.skills.length / 2)).map((skill) => (
+                <Badge key={skill} className="mx-2 text-md py-2 px-4 shadow-neo border-2">
+                  {skill}
+                </Badge>
+              ))}
+            </Marquee>
           </div>
         </div>
       </section>

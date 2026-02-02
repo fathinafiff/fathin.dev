@@ -5,7 +5,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-none border-2 border-foreground text-sm font-semibold uppercase tracking-wide transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-[3px_3px_0_0_hsl(var(--foreground))] hover:-translate-x-0.5 hover:-translate-y-0.5",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-foreground text-sm font-semibold uppercase tracking-wide transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-neo-sm hover:-translate-x-0.5 hover:-translate-y-0.5",
   {
     variants: {
       variant: {

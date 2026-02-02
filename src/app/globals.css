@@ -3,136 +3,150 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-      --background: 48 100% 97%;
-      --foreground: 0 0% 7%;
+  :root {
+    --background: 48 100% 97%;
+    --foreground: 0 0% 7%;
 
-      --card: 48 100% 98%;
-      --card-foreground: 0 0% 7%;
+    --card: 48 100% 98%;
+    --card-foreground: 0 0% 7%;
 
-      --popover: 48 100% 98%;
-      --popover-foreground: 0 0% 7%;
+    --popover: 48 100% 98%;
+    --popover-foreground: 0 0% 7%;
 
-      --primary: 0 0% 7%;
-      --primary-foreground: 0 0% 98%;
+    --primary: 0 0% 7%;
+    --primary-foreground: 0 0% 98%;
 
-      --secondary: 48 100% 68%;
-      --secondary-foreground: 0 0% 7%;
+    --secondary: 48 100% 68%;
+    --secondary-foreground: 0 0% 7%;
 
-      --muted: 48 100% 92%;
-      --muted-foreground: 0 0% 35%;
+    --muted: 48 100% 92%;
+    --muted-foreground: 0 0% 35%;
 
-      --accent: 186 100% 85%;
-      --accent-foreground: 0 0% 7%;
+    --accent: 186 100% 85%;
+    --accent-foreground: 0 0% 7%;
 
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-      --border: 0 0% 7%;
-      --input: 0 0% 7%;
-      --ring: 0 0% 7%;
+    --border: 0 0% 7%;
+    --input: 0 0% 7%;
+    --ring: 0 0% 7%;
 
-      --radius: 0.25rem;
-    }
-
-    .dark {
-      --background: 0 0% 7%;
-      --foreground: 48 100% 97%;
-
-      --card: 0 0% 10%;
-      --card-foreground: 48 100% 97%;
-
-      --popover: 0 0% 10%;
-      --popover-foreground: 48 100% 97%;
-
-      --primary: 48 100% 90%;
-      --primary-foreground: 0 0% 7%;
-
-      --secondary: 48 100% 68%;
-      --secondary-foreground: 0 0% 7%;
-
-      --muted: 0 0% 15%;
-      --muted-foreground: 0 0% 70%;
-
-      --accent: 186 100% 70%;
-      --accent-foreground: 0 0% 7%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 0 0% 98%;
-
-      --border: 48 100% 97%;
-      --input: 48 100% 97%;
-      --ring: 48 100% 97%;
-    }
+    --radius: 0.5rem;
   }
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-      background-image: radial-gradient(
-        hsl(var(--foreground) / 0.15) 1px,
-        transparent 1px
-      );
-      background-size: 26px 26px;
-      background-position: -8px -8px;
-    }
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 48 100% 97%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 48 100% 97%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 48 100% 97%;
+
+    --primary: 48 100% 90%;
+    --primary-foreground: 0 0% 7%;
+
+    --secondary: 48 100% 68%;
+    --secondary-foreground: 0 0% 7%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 186 100% 70%;
+    --accent-foreground: 0 0% 7%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 48 100% 97%;
+    --input: 48 100% 97%;
+    --ring: 48 100% 97%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
   }
 
+  body {
+    @apply bg-background text-foreground;
+    background-image: linear-gradient(to right,
+        hsl(var(--foreground) / 0.1) 1px,
+        transparent 1px),
+      linear-gradient(to bottom, hsl(var(--foreground) / 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center top;
+  }
+}
+
+h3 code {
+  @apply !text-lg;
+}
+
+@media (min-width: 768px) {
   h3 code {
-    @apply !text-lg md:!text-xl;
+    @apply !text-xl;
   }
-  
-  pre {
-    @apply !px-0 rounded-lg overflow-x-auto py-4
-  }
-   
-  pre [data-line] {
-    @apply px-4
-  }
+}
 
+pre {
+  @apply !px-0 rounded-lg overflow-x-auto py-4
+}
+
+pre [data-line] {
+  @apply px-4
+}
+
+code {
+  @apply text-sm !leading-loose;
+}
+
+@media (min-width: 768px) {
   code {
-    @apply text-sm md:text-base !leading-loose;
+    @apply text-base;
   }
-  
-  pre > code {
-    counter-reset: line;
-  }
-  
+}
+
+pre>code {
+  counter-reset: line;
+}
+
+code[data-theme*=" "],
+code[data-theme*=" "] span {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+
   code[data-theme*=" "],
   code[data-theme*=" "] span {
-    color: var(--shiki-light);
-    background-color: var(--shiki-light-bg);
+    color: var(--shiki-dark);
+    background-color: var(--shiki-dark-bg);
   }
-   
-  @media (prefers-color-scheme: dark) {
-    code[data-theme*=" "],
-    code[data-theme*=" "] span {
-      color: var(--shiki-dark);
-      background-color: var(--shiki-dark-bg);
-    }
-  }
-  
-  code[data-line-numbers] {
-    counter-reset: line;
-  }
-  
-  code[data-line-numbers] > [data-line]::before {
-    counter-increment: line;
-    content: counter(line);
-    @apply inline-block w-4 mr-4 text-right text-gray-500;
-  }
- 
-  code {
-    counter-reset: line;
-  }
- 
-  code > [data-line]::before {
+}
+
+code[data-line-numbers] {
+  counter-reset: line;
+}
+
+code[data-line-numbers]>[data-line]::before {
   counter-increment: line;
   content: counter(line);
- 
+  @apply inline-block w-4 mr-4 text-right text-gray-500;
+}
+
+code {
+  counter-reset: line;
+}
+
+code>[data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+
   /* Other styling */
   display: inline-block;
   width: 1rem;
@@ -140,11 +154,11 @@
   text-align: right;
   color: gray;
 }
- 
-code[data-line-numbers-max-digits="2"] > [data-line]::before {
+
+code[data-line-numbers-max-digits="2"]>[data-line]::before {
   width: 2rem;
 }
- 
-code[data-line-numbers-max-digits="3"] > [data-line]::before {
+
+code[data-line-numbers-max-digits="3"]>[data-line]::before {
   width: 3rem;
 }
