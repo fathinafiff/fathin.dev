@@ -95,7 +95,7 @@ export const DATA = {
   work: [
     {
       company: "Nightcoders",
-      href: "https://nightcoders.id",
+      href: "https://nightcoders.studio",
       badges: ["Current"],
       location: "Remote",
       title: "Founder",
@@ -151,9 +151,174 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Akses Pendanaan (CBT)",
+      href: "https://connect.kemenkeu.go.id",
+      active: true,
+      description:
+        "AI-powered Concept Note Generator for Green Climate Fund (GCF) funding applications. Features multi-step form submissions, section-by-section LLM generation with RAG, inline diff editing, and PDF export.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Laravel",
+        "OpenAI API",
+        "vLLM",
+        "RAG",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://connect.kemenkeu.go.id",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/connect.png",
+    },
+    {
+      title: "Tokobux",
+      href: "https://tokobux.com",
+      active: true,
+      description:
+        "Roblox Game Pass automation platform with a customer storefront, seller dashboard, and async backend. Uses webhook-driven architecture with Selenium browser automation, Redis queues, and RQ workers for scalable purchase processing.",
+      technologies: [
+        "Next.js",
+        "FastAPI",
+        "Selenium",
+        "Redis",
+        "Supabase",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://tokobux.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/tokobux.png",
+    },
+    {
+      title: "Gudang Social",
+      href: "https://gudang.social",
+      active: true,
+      description:
+        "Modern social platform connecting users through posts, profiles, and realtime interactions. Includes payment integration, content automation APIs, and a follow-based personalized feed.",
+      technologies: [
+        "Next.js",
+        "Supabase",
+        "PostgreSQL",
+        "Midtrans",
+        "Tailwind CSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://gudang.social",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/gudang-social.png",
+    },
+    {
+      title: "Khalifah",
+      href: "https://bimbelkhalifah.com/",
+      active: true,
+      description:
+        "Online tryout and education platform with test management, participant tracking, scheduling, question banks, and role-based admin dashboards for educators and students.",
+      technologies: [
+        "Next.js",
+        "Drizzle ORM",
+        "PostgreSQL",
+        "Better Auth",
+        "Tailwind CSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://bimbelkhalifah.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/bimbel-khalifah.png",
+    },
+    {
+      title: "Laneige - Play with Wonders",
+      href: "https://laneige.zanroo.id/playwithwonders",
+      active: true,
+      description:
+        "Interactive campaign landing page for Laneige beauty brand. Features a guided form experience with animated reveals and terms overlay, built for mobile-first engagement.",
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      links: [
+        {
+          type: "Website",
+          href: "https://laneige.zanroo.id/playwithwonders",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/laneige-form.png",
+    },
+    {
+      title: "Lapor Diri KBRI Riyadh",
+      href: "https://kbririyadh.id/",
+      active: true,
+      description:
+        "Self-reporting system for Indonesian citizens in Riyadh. Public multi-step form submissions, status tracking, admin dashboard with reporting, data export, and integrated blog.",
+      technologies: [
+        "Next.js",
+        "Drizzle ORM",
+        "PostgreSQL",
+        "Better Auth",
+        "MinIO",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://kbririyadh.id/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/kbri-riyadh.png",
+    },
+    {
+      title: "Management Patient RSJ",
+      href: "#",
+      active: true,
+      description:
+        "Healthcare patient management system for hospital settings. Manages patient records, evaluations, discharge workflows, user roles, and real-time notifications with dashboard analytics.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "MongoDB",
+        "Mongoose",
+        "Tailwind CSS",
+      ],
+      links: [],
+      image: "/images/rsj-aceh.png",
+    },
+    {
+      title: "Zanroo",
+      href: "https://zanroo.id",
+      active: true,
+      description:
+        "Corporate web platform with public landing pages, blog, form submissions, and an admin panel for content and lead management.",
+      technologies: [
+        "Next.js",
+        "Drizzle ORM",
+        "PostgreSQL",
+        "Better Auth",
+        "MinIO",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://zanroo.id",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/zanroo.png",
+    },
+    {
       title: "Creacon",
       href: "https://creacon.id",
-      // dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
         "Modern company website showcasing creative services, portfolio, and contact system with CMS support.",
@@ -192,7 +357,6 @@ export const DATA = {
     {
       title: "GEN-Z EYEWEAR",
       href: "https://www.genzlens.com/",
-      // dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
         "Next generation eyewear brand website with AI based PD measurement, allowing users to find the right glasses fit remotely.",
@@ -225,10 +389,46 @@ export const DATA = {
   ],
   building: [
     {
+      title: "Capy Food Journal",
+      description:
+        "Track calories like texting a friend. Just type what you ate. Capy finds the calories and macros instantly with trusted sources that visible in the app.",
+      image: "/images/favicons/capyfoodjournal.png",
+      links: [
+        {
+          title: "Website",
+          href: "https://capyfoodjournal.nightcoders.id/",
+          icon: <Icons.globe className="h-4 w-4" />,
+        },
+        {
+          title: "Appstore",
+          href: "https://apps.apple.com/us/app/capy-food-journal/id6760335215",
+          icon: <Icons.apple className="h-4 w-4" />,
+        },
+        {
+          title: "Playstore",
+          href: "https://play.google.com/store/apps/details?id=com.tinapyp.capy",
+          icon: <Icons.googlePlay className="h-4 w-4" />,
+        },
+      ],
+    },
+    {
+      title: "1secondclaw",
+      description:
+        "The Managed OpenClaw Runtime. A fast, cross-platform productivity system built with Next.js and Expo, featuring real-time sync via Convex, authentication, and in-app purchases. Designed for instant capture and seamless workflows across web and mobile.",
+      image: "/images/favicons/1secondclaw.png",
+      links: [
+        {
+          title: "Website",
+          href: "https://1secondclaw.com",
+          icon: <Icons.globe className="h-4 w-4" />,
+        },
+      ],
+    },
+    {
       title: "GetMyWebRank",
       description:
         "AI powered SEO automation platform. GetMyWebRank helps founders and teams research keywords using AI, turn keywords into content ideas and clusters, generate SEO optimized articles, and manage publishing using a calendar based workflow. Built for consistency, speed, and scale. This is currently our main growth focus.",
-      image: "/getmywebrank.png",
+      image: "/images/favicons/getmywebrank.png",
       links: [
         {
           title: "Website",
@@ -241,7 +441,7 @@ export const DATA = {
       title: "Copi - Notes & Tasks",
       description:
         "Copi is a minimal note and task management app designed to help you stay organized without distractions. Quick notes and task capture, reminders that stay calm and useful, and shared labels to organize everything in one place. Built for daily use.",
-      image: "/copi.jpg",
+      image: "/images/favicons/copi.png",
       links: [
         {
           title: "Website",

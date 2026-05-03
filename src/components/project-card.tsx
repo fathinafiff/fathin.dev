@@ -57,14 +57,20 @@ export function ProjectCard({
             playsInline
             className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
           />
-        ) : (
+        ) : image ? (
           <Image
-            src={image!}
+            src={image}
             alt={title}
             width={500}
             height={300}
             className="h-40 w-full overflow-hidden object-cover object-top"
           />
+        ) : (
+          <div className="flex h-40 w-full items-center justify-center bg-gradient-to-br from-muted to-muted/50">
+            <span className="text-2xl font-bold text-muted-foreground/40">
+              {title.split(" ").map((w) => w[0]).join("").slice(0, 3).toUpperCase()}
+            </span>
+          </div>
         )}
       </Link>
       <CardHeader className="px-2">

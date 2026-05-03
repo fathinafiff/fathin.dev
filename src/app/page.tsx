@@ -86,18 +86,28 @@ export default function Page() {
           </BlurFade>
           <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background pv-20 md:shadow-xl">
             <Marquee pauseOnHover className="[--duration:20s]">
-              {DATA.skills.slice(0, Math.ceil(DATA.skills.length / 2)).map((skill) => (
-                <Badge key={skill} className="mx-2 text-md py-2 px-4 shadow-neo border-2">
-                  {skill}
-                </Badge>
-              ))}
+              {DATA.skills
+                .slice(0, Math.ceil(DATA.skills.length / 2))
+                .map((skill) => (
+                  <Badge
+                    key={skill}
+                    className="mx-2 text-md py-2 px-4 shadow-neo border-2"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
             </Marquee>
             <Marquee reverse pauseOnHover className="[--duration:20s] mt-4">
-              {DATA.skills.slice(Math.ceil(DATA.skills.length / 2)).map((skill) => (
-                <Badge key={skill} className="mx-2 text-md py-2 px-4 shadow-neo border-2">
-                  {skill}
-                </Badge>
-              ))}
+              {DATA.skills
+                .slice(Math.ceil(DATA.skills.length / 2))
+                .map((skill) => (
+                  <Badge
+                    key={skill}
+                    className="mx-2 text-md py-2 px-4 shadow-neo border-2"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
             </Marquee>
           </div>
         </div>
@@ -137,9 +147,9 @@ export default function Page() {
                   Check out our latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  We&apos;ve worked with clients on a range of products — from
-                  landing pages to full-scale platforms. Here are some
-                  highlights of our recent client work.
+                  This is all Nightcoders client work - from landing pages to
+                  full-scale platforms. Here are some highlights of our recent
+                  projects.
                 </p>
               </div>
             </div>
@@ -156,8 +166,8 @@ export default function Page() {
                   title={project.title}
                   description={project.description}
                   tags={project.technologies}
-                  image={"image" in project ? project.image : ""}
-                  video={"video" in project ? project.video : ""}
+                  image={"image" in project ? (project.image as string) : ""}
+                  video={"video" in project ? (project.video as string) : ""}
                   links={project.links}
                 />
               </BlurFade>
